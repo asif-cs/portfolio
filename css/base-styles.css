@@ -1,0 +1,187 @@
+/*
+ * =============================================
+ * TABLE OF CONTENTS
+ * =============================================
+ * 1.0  ROOT VARIABLES & GLOBAL RESET
+ * 2.0  BASE & TYPOGRAPHY
+ * 3.0  LAYOUT (Header, Footer, Wrapper)
+ * 4.0  ACCESSIBILITY PREFERENCES
+ * 5.0  PRINT STYLES
+ * =============================================
+ */
+
+
+/* ---------------------------------------------
+ * 1.0  ROOT VARIABLES & GLOBAL RESET
+ * --------------------------------------------- */
+:root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --ease-1: cubic-bezier(0.25, 1, 0.5, 1);
+    --ease-2: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+body[data-theme='light'] {
+    --bg-color: #f4f5f7;
+    --text-primary: #171717;
+    --text-secondary: #6b7280;
+    --accent-color: #4f46e5;
+    --accent-light: rgba(79, 70, 229, 0.1);
+    --border-color: #e5e7eb;
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --header-bg: rgba(255, 255, 255, 0.7);
+    --shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+body[data-theme='dark'] {
+    --bg-color: #121212;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a3a3a3;
+    --accent-color: #818cf8;
+    --accent-light: rgba(129, 140, 248, 0.1);
+    --border-color: #262626;
+    --card-bg: rgba(30, 30, 30, 0.7);
+    --header-bg: rgba(30, 30, 30, 0.7);
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.7;
+    overflow-x: hidden;
+    min-width: 360px;
+    transition: background-color 0.3s var(--ease-2), color 0.3s var(--ease-2);
+}
+
+body.no-scroll { overflow: hidden; }
+body.menu-is-open .sticky-header { z-index: 1003; }
+
+/* ---------------------------------------------
+ * 2.0  BASE & TYPOGRAPHY
+ * --------------------------------------------- */
+h1, h2, h3 { font-weight: 700; line-height: 1.3; }
+h1 { font-family: var(--font-mono); font-size: clamp(2.5rem, 5vw, 3.5rem); letter-spacing: -1.5px; }
+h3 { font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600; color: var(--text-primary); letter-spacing: -0.5px; }
+p:not(:last-child) { margin-bottom: 1em; }
+ul { list-style: none; }
+.link-underline {
+    color: var(--text-secondary);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+}
+.link-underline::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background-color: var(--accent-color); transition: width 0.3s var(--ease-1); }
+.link-underline:hover { color: var(--text-primary); }
+.link-underline:hover::after { width: 100%; }
+
+/* ---------------------------------------------
+ * 3.0  LAYOUT
+ * --------------------------------------------- */
+.portfolio-wrapper { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+.main-content section { padding: 0 0 5rem; scroll-margin-top: 5rem;}
+#networkBackground { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background-color: var(--bg-color); }
+
+.sticky-header { position: sticky; top: 1rem; z-index: 1000; padding: 0 1rem; }
+.header-container { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; background-color: var(--header-bg); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border: 1px solid var(--border-color); border-radius: 12px; padding: 0.75rem 1.5rem; box-shadow: 0 4px 15px var(--shadow-color); }
+.header-logo a { font-weight: 600; font-size: 1.125rem; color: var(--text-primary); text-decoration: none; }
+.header-controls { display: flex; align-items: center; gap: 0.5rem; }
+
+.main-footer { padding: 2.5rem 1.5rem; margin-top: 3rem; border-top: 1px solid var(--border-color); background-color: var(--card-bg); font-size: 0.85rem; }
+.footer-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 960px; margin: 0 auto; text-align: left; }
+.footer-socials .social-links-footer { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+
+/* ---------------------------------------------
+ * 4.0  ACCESSIBILITY PREFERENCES
+ * --------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ---------------------------------------------
+ * 5.0  PRINT STYLES
+ * --------------------------------------------- */
+@media print {
+    /* Hide interactive elements not needed for print */
+    .sticky-header, 
+    .theme-toggle, 
+    .hamburger-menu, 
+    #networkBackground, 
+    .back-to-top, 
+    .scroll-down-indicator, 
+    .contact-form, 
+    .media-controls, 
+    .read-more-btn,
+    .project-filters,
+    .main-footer { /* Added footer to hide list */
+        display: none !important;
+    }
+
+    body {
+        background-color: white !important;
+        color: black !important;
+        overflow: visible !important;
+        font-size: 12pt;
+    }
+
+    .portfolio-wrapper {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Expand all "read more" text */
+    .project-description {
+        -webkit-line-clamp: unset !important;
+        max-height: none !important;
+        display: block !important;
+        overflow: visible !important;
+    }
+    
+    /* Reveal hidden items */
+    .project-card, .project-card.hidden {
+        display: block !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    /* Better link formatting */
+    a {
+        text-decoration: underline;
+        color: black;
+    }
+    
+    /* Ensure page breaks don't cut cards in half */
+    .card, section, h2, h3 {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .card {
+        border: 1px solid #ccc;
+        box-shadow: none;
+        margin-bottom: 1rem;
+        background-color: transparent !important;
+    }
+
+    /* Adjust profile header to save ink */
+    .profile-header {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    .profile-header .title::after {
+        content: none;
+    }
+}
