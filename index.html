@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base-styles.css">
+    <link rel="stylesheet" href="css/sections.css">
+
+    <script type="module" src="js/loader.js" defer></script>
+</head>
+<body data-theme="light">
+
+    <noscript>
+        <div style="text-align: center; padding: 20px; background-color: #ffdddd; color: #cc0000; font-family: sans-serif; border: 1px solid #cc0000; margin: 20px; border-radius: 8px;">
+            <p><strong>JavaScript is disabled in your browser.</strong></p>
+            <p>This website requires JavaScript to function properly. Please enable JavaScript to view the full content and interactive features.</p>
+        </div>
+    </noscript>
+
+    <div id="js-enabled-content" style="display: none;">
+        <canvas id="networkBackground"></canvas>
+
+        <header class="sticky-header">
+            <div class="header-container">
+                <div class="header-logo">
+                    <a href="#" id="header-name-link"></a>
+                </div>
+                <div class="header-controls">
+                    <nav class="main-nav" id="main-nav"></nav>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        </button>
+                    <button class="hamburger-menu" aria-label="Open Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <nav class="mobile-nav" id="mobile-nav"></nav>
+        </div>
+
+        <div class="portfolio-wrapper">
+            <header class="profile-header" id="profile-header"></header>
+
+            <main class="main-content" id="main-content"></main>
+        </div>
+
+        <footer class="main-footer">
+            </footer>
+
+        <div id="fullscreenModal" class="fullscreen-modal" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close media viewer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+                <button class="modal-nav prev" aria-label="Previous image" style="display: none;">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <div class="modal-media-wrapper">
+                </div>
+                <button class="modal-nav next" aria-label="Next image" style="display: none;">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </div>
+
+        <script src="js/network-background.js"></script>
+    </div>
+</body>
+</html>

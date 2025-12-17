@@ -1,0 +1,401 @@
+{
+  "metadata": {
+    "siteName": "Asif Rabnawaz | Portfolio",
+    "siteDescription": "The professional portfolio of Asif Rabnawaz, a Computer Science with Cybersecurity graduate from the University of Salford.",
+    "lastUpdated": "2023-10-10"
+  },
+  "personalInfo": {
+    "name": "Asif Rabnawaz",
+    "title": "BSc (Hons) in Computer Science w/ Cybersecurity",
+    "imageUrl": "media/img/dp.jpg",
+    "email": "asifrabnawaz@gmail.com",
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "url": "#",
+        "icon": "linkedin"
+      },
+      {
+        "name": "GitHub",
+        "url": "#",
+        "icon": "github"
+      },
+      {
+        "name": "Twitter (X)",
+        "url": "#",
+        "icon": "twitter"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "about",
+      "title": "About",
+      "type": "bio",
+      "content": {
+        "text": [
+          "Computer Science with Cybersecurity graduate (First-Class Honours) from the University of Salford, with hands-on experience in software development and cybersecurity from academic projects and team collaborations.",
+          "Proficient in Python, Java, JavaScript, PHP, and SQL, and skilled in Agile methodologies, secure web application development, and implementing robust cybersecurity measures.",
+          "I am eager to apply my technical knowledge and collaborative spirit in a professional software development or cybersecurity role to contribute to impactful projects while continuing my professional learning."
+        ],
+        "media": [
+          {
+            "type": "image",
+            "src": "media/img/about.jpg",
+            "alt": "A developer's hands typing on a laptop with code visible on the screen, representing software development and cybersecurity."
+          }
+        ]
+      }
+    },
+    {
+      "id": "experience",
+      "title": "Experience",
+      "type": "timeline",
+      "content": [
+        {
+          "role": "Store Assistant",
+          "company": "Tesco",
+          "period": "August 2022 – Present",
+          "responsibilities": [
+            "Delivered exceptional customer service and trained new staff on tills and store operations.",
+            "Developed robust problem-solving and teamwork skills in a fast-paced environment.",
+            "Addressed customer issues with patience and professionalism."
+          ]
+        },
+        {
+          "role": "Scrum Master (Temporary Project)",
+          "company": "Morson Projects",
+          "period": "December 2022 – January 2023",
+          "responsibilities": [
+            "Led a five-member Agile team to develop a secure Communications Dashboard Web Application.",
+            "Managed three iterative sprints and conducted four client demonstrations to ensure timely delivery.",
+            "Utilised Microsoft Teams and GitHub for task coordination and version control."
+          ]
+        },
+        {
+          "role": "Work Experience",
+          "company": "Barclays UK",
+          "period": "May 2018",
+          "responsibilities": [
+            "Assisted customers with banking machines, enhancing communication skills by explaining processes clearly.",
+            "Improved customer confidence by demonstrating transactions such as paying bills and withdrawing money."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "type": "projects",
+      "content": [
+        {
+          "id": "proj-collabocraft",
+          "title": "CollaboCraft – Academic Productivity Platform",
+          "description": [
+            "Engineered a full-stack, web-based academic management platform using an MVC framework to provide students with tools for collaborative note-taking, scheduling, and project management.",
+            "Prioritised data integrity and user privacy by implementing robust security features, including granular role-based access control (RBAC) and encrypted user authentication, resulting in positive evaluations for both usability and security."
+          ],
+          "tags": [
+            "PHP",
+            "MVC",
+            "JavaScript",
+            "MySQL",
+            "Security",
+            "RBAC",
+            "Full-Stack"
+          ],
+          "links": [
+            {
+              "name": "Live Demo",
+              "url": "#"
+            },
+            {
+              "name": "Source Code",
+              "url": "#"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=CollaboCraft+Dashboard",
+              "alt": "Screenshot of the CollaboCraft dashboard showing project overview.",
+              "caption": "The main dashboard provides a quick overview of ongoing projects and tasks."
+            },
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=Collaborative+Editor",
+              "alt": "The real-time collaborative note-taking editor feature.",
+              "caption": "A rich-text editor allows multiple users to collaborate on notes simultaneously."
+            },
+            {
+              "type": "image",
+              "src": "https://placehold.co/600x1200/4f46e5/ffffff?text=Mobile+View",
+              "alt": "The responsive mobile view of the scheduling feature.",
+              "caption": "The platform is fully responsive, ensuring a seamless experience on mobile devices."
+            }
+          ]
+        },
+        {
+          "id": "proj-hack-camp",
+          "title": "Hack Camp Secure Communications App",
+          "description": [
+            "Developed a secure internal communications web app featuring real-time data display and drag-and-drop functionality for dynamic content management.",
+            "Designed and presented detailed UI prototypes and wireframes in client demonstrations, and strengthened network security through restricted access controls and robust user authentication."
+          ],
+          "tags": [
+            "Web App",
+            "Security",
+            "Real-Time",
+            "UI/UX",
+            "Prototyping",
+            "Auth"
+          ],
+          "links": [
+            {
+              "name": "Source Code",
+              "url": "#"
+            },
+            {
+              "name": "Case Study",
+              "url": "#"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=Secure+Comms+App",
+              "alt": "Screenshot of the Hack Camp secure communications application.",
+              "caption": "The main interface of the secure communications dashboard."
+            },
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/7c3aed/ffffff?text=UI+Wireframe",
+              "alt": "A wireframe of the main user interface presented to clients.",
+              "caption": "Initial UI wireframe used for client demonstrations and feedback sessions."
+            }
+          ]
+        },
+        {
+          "id": "proj-borrow-charger",
+          "title": "Borrow My Charger",
+          "description": [
+            "Designed and developed a user-friendly interface for a conceptual peer-to-peer car charger rental service, focusing on accessibility and secure login functionality.",
+            "Integrated a map view for locating available chargers and engineered a script to generate and manage over 1,000 mock user data entries for realistic testing and demonstration."
+          ],
+          "tags": [
+            "PHP",
+            "HTML",
+            "CSS",
+            "MySQL",
+            "Mapping",
+            "UI/UX"
+          ],
+          "links": [
+            {
+              "name": "Live Demo",
+              "url": "#"
+            },
+            {
+              "name": "Source Code",
+              "url": "#"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=Borrow+My+Charger",
+              "alt": "The map interface of Borrow My Charger showing available stations.",
+              "caption": "An interactive map displays all available peer-to-peer charger locations."
+            },
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=Charger+Details",
+              "alt": "The details page for a specific car charger rental.",
+              "caption": "Users can view details and book a charger directly from the app."
+            }
+          ]
+        },
+        {
+          "id": "proj-medical-checkin",
+          "title": "Medical Centre Check-in System",
+          "description": [
+            "Designed an efficient user interface for a .NET desktop application, applying Human-Computer Interaction (HCI) fundamentals to streamline the patient experience.",
+            "Integrated a QR code scanning system to comply with COVID-19 regulations, which included multi-language support (including Welsh) to enhance accessibility for a diverse user base."
+          ],
+          "tags": [
+            ".NET",
+            "C#",
+            "HCI",
+            "QR Code",
+            "Desktop App",
+            "Accessibility"
+          ],
+          "links": [
+            {
+              "name": "Source Code",
+              "url": "#"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=Medical+Check-in",
+              "alt": "The main screen of the Medical Centre Check-in System.",
+              "caption": "The welcome screen of the .NET desktop application for patient check-in."
+            },
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=QR+Scanner+View",
+              "alt": "The interface for the integrated QR code scanner.",
+              "caption": "A built-in QR code scanner simplifies the check-in process for patients."
+            },
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=Language+Selection",
+              "alt": "The language selection screen, showing English and Welsh options.",
+              "caption": "Accessibility was enhanced with multi-language support, including Welsh."
+            }
+          ]
+        },
+        {
+          "id": "proj-digital-library",
+          "title": "Digital Library Item Management",
+          "description": [
+            "Developed a user-friendly desktop application in Java using the BlueJ IDE. The system was designed to achieve specific operational goals for managing digital library items efficiently, demonstrating strong object-oriented programming skills."
+          ],
+          "tags": [
+            "Java",
+            "BlueJ IDE",
+            "Desktop App",
+            "OOP"
+          ],
+          "links": [
+            {
+              "name": "Source Code",
+              "url": "#"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=Digital+Library",
+              "alt": "Screenshot of the Digital Library management application's main window.",
+              "caption": "The main window of the Java-based desktop application for library management."
+            },
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=Search+Functionality",
+              "alt": "The item search and filtering feature of the Digital Library app.",
+              "caption": "Powerful search and filtering tools help manage library items efficiently."
+            }
+          ]
+        },
+        {
+          "id": "proj-personal-portfolio",
+          "title": "Personal Portfolio Website (v1)",
+          "description": [
+            "Built my first personal portfolio from the ground up using only HTML and CSS, focusing on creating a clean, accessible, and visually appealing layout.",
+            "Emphasized best practices for modern web development by applying media queries for cross-device responsiveness and using the W3C validator to ensure the code adhered to the latest web standards."
+          ],
+          "tags": [
+            "HTML",
+            "CSS",
+            "Responsive Design",
+            "W3C Validation"
+          ],
+          "links": [
+            {
+              "name": "Source Code",
+              "url": "#"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "https://placehold.co/1280x720/4f46e5/ffffff?text=Portfolio+V1+Desktop",
+              "alt": "Screenshot of the first version of the personal portfolio on a desktop.",
+              "caption": "The clean and visually appealing desktop layout of my first portfolio."
+            },
+            {
+              "type": "image",
+              "src": "https://placehold.co/600x1200/4f46e5/ffffff?text=Portfolio+V1+Mobile",
+              "alt": "The responsive mobile view of the first portfolio.",
+              "caption": "Media queries were used to ensure the site was fully responsive on mobile devices."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Skills",
+      "type": "skills",
+      "content": {
+        "Languages": [
+          "JavaScript",
+          "Python",
+          "Java",
+          "PHP",
+          "SQL",
+          "HTML",
+          "CSS"
+        ],
+        "Frameworks & Libraries": [
+          "React",
+          "Node.js",
+          "MVC",
+          "PHP Ratchet (WebSocket)"
+        ],
+        "Cybersecurity": [
+          "Penetration Testing",
+          "Vulnerability Assessment"
+        ],
+        "Tools & Platforms": [
+          "Git",
+          "Jira",
+          "Figma",
+          "Linux"
+        ],
+        "Databases": [
+          "MongoDB",
+          "PostgreSQL",
+          "MySQL"
+        ]
+      }
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "type": "education",
+      "content": {
+        "items": [
+          {
+            "degree": "BSc (Hons) in Computer Science with Cyber Security",
+            "university": "University of Salford",
+            "year": "2020 - 2024",
+            "notes": [
+              "Achieved First-Class Honours.",
+              "Gained expertise in Object-Oriented Programming, Network Security, and various Cybersecurity Tools.",
+              "Skilled in Agile methodologies and modern software development practices."
+            ]
+          },
+          {
+            "degree": "BTEC Nationals Extended Diploma in IT",
+            "university": "The Manchester College",
+            "year": "2017 – 2019",
+            "notes": [
+              "Achieved Distinction* Distinction* Distinction*.",
+              "Awarded Most Supportive Student of the year 2019."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "type": "contact",
+      "content": "I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out!"
+    }
+  ]
+}
